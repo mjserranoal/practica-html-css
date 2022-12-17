@@ -24,4 +24,4 @@ Desarrollo de un sitio web responsive probado en las siguientes resoluciones:
 3. Microsoft Edge.
 
 ### Recursos
-Se incluyen en el repositorio las imagenes necesárias, así como la fuente elegida.
+Se incluyen en el repositorio las imágenes necesarias así como la fuente elegida (Roboto).
