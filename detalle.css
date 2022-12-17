@@ -1,0 +1,212 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #700c44;
+}
+
+#navegacion {
+    background-color: #EDC79B;
+    min-height: 6vh;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#navegacion div {
+    font-size: 1.4rem;
+    padding-top: 3%;
+}
+
+#footer {
+    text-align: center;
+    padding-top: 3%;
+    background-color: #63a375;
+    border-top: 1px solid black;
+}
+
+#footer a img {
+    padding-right: 4%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#rejilla {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#rejilla header {
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 10px;
+    background-color: #fff;
+    justify-items: center;
+}
+
+.box {
+    background-color: #D57A66;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+}
+
+#cabecera {
+    width: 100%;
+    height: 34vh;
+}
+
+#simbolo {
+    float: left;
+    padding-left: 6%;
+}
+
+#titulo {
+    float: right;
+    padding-right: 6%;
+}
+
+#simbolo_des {
+    display: none;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    #navegacion div {
+        padding-top: 2%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    #simbolo_mvl {
+        display: none;
+    }
+    #simbolo_des {
+        display: block;
+    }
+    a {
+        transition: color 0.4s linear 0.2s;
+    }
+    a:hover {
+        color: white;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    #navegacion div {
+        padding-top: 1%;
+    }
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+
+@media (min-width: 1400px) {}

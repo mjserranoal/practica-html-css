@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Practica M Jose Serrano Alcantara</title>
+</head>
+
+<body>
+    <!--navegacion-->
+    <section id="navegacion">
+        <div id="autora">
+            <span>María José Serrano Alcántara</span>
+        </div>
+        <div id="enlaces">
+            <ul>
+                <li>
+                    <a href="#carousel">Carousel</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#formulariocontacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="#footer">Pie</a>
+                </li>
+                <li>
+                    <a href="detalle.html">Detalle</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- header-->
+    <section id="cabecera">
+        <img src="imagenes/im_l.jpg" srcset="
+        imagenes/im_l.jpg 597w,
+        imagenes/im_xl.jpg 1027w,
+        imagenes/im_xxl.jpg 1400w,">
+    </section>
+    <!-- carousel-->
+    <section id="carousel">
+        <header>
+            <h2>Novedades</h2>
+        </header>
+        <main>
+            <div class="carousel-slides">
+                <div id="slide1">
+                    <iframe class="video" src="https://www.youtube.com/embed/iUrFW4JTv3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                </div>
+                <div id="slide2">
+                    <iframe class="video" src="https://www.youtube.com/embed/bDOn2lI9KXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+                </div>
+                <div id="slide3">
+                    <div>
+                        <header>
+                            <h3>Aprende a programar!!!!</h3>
+                        </header>
+                        <main>
+                            <p>Os recomiendo profesionalizaros con estos cracks <a href="https://keepcoding.io/" target="_blank">Keepcoding</a></p>
+
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-links">
+                <a href="#slide1" class="carousel-dot"></a>
+                <a href="#slide2" class="carousel-dot"></a>
+                <a href="#slide3" class="carousel-dot"></a>
+            </div>
+        </main>
+    </section>
+    <!-- skill programacion-->
+    <section id="skills">
+        <header>
+            <h2>Skills</h2>
+        </header>
+        <main>
+            <div class="skills">
+                <div class="nombre">
+                    <span>HTML</span>
+                </div>
+                <div class="barra">
+                    <div id="html"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="nombre">
+                    <span>CSS</span>
+                </div>
+                <div class="barra">
+                    <div id="css"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="nombre">
+                    <span>Javascript</span>
+                </div>
+                <div class="barra">
+                    <div id="javascript"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="nombre">
+                    <span>Python</span>
+                </div>
+                <div class="barra">
+                    <div id="python"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="nombre">
+                    <span>Mysql</span>
+                </div>
+                <div class="barra">
+                    <div id="mysql"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="nombre">
+                    <span>Git</span>
+                </div>
+                <div class="barra">
+                    <div id="git"></div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- formulario de contacto-->
+    <section id="formulariocontacto">
+        <h2>Formulario de contacto:</h2>
+        <form action="" method="post">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input required pattern="[A-Za-z\s]+" id="nombre" type="nombre" placeholder="escribe tu nombre">
+            </div>
+            <div>
+                <label for="apellidos">Apellidos</label>
+                <input required pattern="[A-Za-z\s]+" id="apellidos" type="apellidos" placeholder="escribe tus apellidos">
+            </div>
+            <div>
+                <label for="telefono">Teléfono</label>
+                <input required pattern="[0-9]{9}" id="telefono" type="tel" placeholder="introduce tu teléfono">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div>
+                        <input required type="radio" id="uni" name="conocer" value="uni"> </imput>
+                        <label for="uni">Universidad</label>
+                    </div>
+                    <div>
+                        <input required type="radio" id="keepcoding" name="conocer" value="keepcoding"></imput>
+                        <label for="keepcoding">Keepcoding kick-off </label>
+                    </div>
+                    <input required type="radio" id="colegio" name="conocer" value="colegio" </imput>
+                    <label for="colegio">Colegio</label>
+                    <div>
+                        <input required type="radio" id="github" name="conocer" value="github"></imput>
+                        <label for="github">Github</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <label id="labelgithub" for="github">Tag de Github</label>
+                <input type="text" pattern="^@[^\s]+" name="github" placeholder="@usuario"> </input>
+            </div>
+            <div>
+                <label for="bio"> Descripción </label>
+                <textarea required name="bio" id="bio" maxlength="180" placeholder="Max 180 caracteres"> </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Guardar">
+            </div>
+    </section>
+    <footer id="footer">
+        <a href="https://www.instagram.com/damacongintonic/" target="_blank"><img src="imagenes/logos/insta-logo_red.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/mar%C3%ADa-jos%C3%A9-serrano-alc%C3%A1ntara-97a97a129/" target="_blank"> <img src="imagenes/logos/LinkedIn-logo-red.png" alt="LinkedIn"></a>
+    </footer>
+</body>
+
+</html>
